@@ -2,7 +2,7 @@ version: '3'
 services:
 
   frontend:
-    image: frontend-main:latest
+    image: obrienpja/qspice-app:1.0
     container_name: frontend-main-container
     ports:
       - 3000:3000
@@ -10,7 +10,7 @@ services:
       - NEXT_PUBLIC_API_URL:localhost:5000
 
   backend:
-    image: backend-connor-sweeping:latest
+    image: obrienpja/qspice-backend:1.0 
     container_name: backend-connor-sweeping-container
     ports:
       - 5000:5000
